@@ -1,0 +1,47 @@
+site_name: { { cookiecutter.site_name } }
+repo_url: { { cookiecutter.repo_url } }
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+theme:
+  name: material
+  features:
+    - header.autohide
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)" #
+      scheme: default
+      primary: cyan
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" #
+      scheme: slate
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+nav:
+  - 'index.md'
+extra_css:
+    - 'css/termynal.css'
+    - 'css/custom.css'
+
+extra_javascript:
+    - 'js/termynal.js'
+    - 'js/custom.js'
